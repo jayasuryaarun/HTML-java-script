@@ -1,0 +1,93 @@
+  <!DOCTYPE html>
+ <head>
+    <meta charset="UTF-8">
+        <meta name="Viewport"content="width=device-width,initial-scale=1.0">
+
+    </meta>
+    <title>Docutment</title>
+    <style>
+       * {
+             box-sizing:border-box;
+        }
+        header{
+                 background-color: rgb(55,55,85);
+                  padding: 45px;
+                  text-align: center;
+                  font-size: 35px;
+                  color: rgb(345,35,65);
+        }
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+  
+    -webkit-flex-direction: column;
+    flex-direction: column;
+        footer{
+                background-color: bisque;
+                padding: 10px;
+                text-align: center;
+                color:blue;
+
+
+        }
+       
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+            
+        }
+    </style>
+ </head>
+ <body>
+    <h2>layout</h2>
+    <p>Loren ipsum dolor sit amet consectetur adipisicing elit. Eum voluptates libero minima suscipit, moid et, amet distinctio tenetur commodi iure debitis adipisci aspernatur laboriosam voluptatum consequuntur. Soluta reprehenderit pariatur eos!</p>
+    <header>
+        <h2>Countries</h2>
+    </header>
+    <section>
+        <nav>
+        <ul>
+            <li><a href="#">india</a></li>
+            <li><a href="#">use</a></li>
+            <li><a href="#">uae</a></li>
+        </ul>
+        </nav>
+        <article>
+<h1>India</h1>
+<p> india is my country Lorem. ipsum dolor sit amet comsctetur adipisicing elit cupiditate, laudantium omins quaerat atque debitis, officia earum ipsm obcaecatirecusandae provident eum tenetur quis officiis, fugiat impedit et voluptas porro neque?
+     </p>
+        </article>
+    </section>
+    <footer>
+        <p>footer</p>
+        <address>no 1,k,k nagar</address>
+    </footer>
+ </body>
+ </html>

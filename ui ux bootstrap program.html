@@ -1,0 +1,111 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devicen-width, initial-sacel=0.1">
+    <title>Create a Student Dashboard page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
+
+        <style>
+         *{
+            box-sizing: border-box;
+         }
+         header{
+            background-color: rgb(0,355,355);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color:rgb(155,0,30);
+         }
+         section{
+            display:-webkit-box-flex;
+            disply:flex;
+         }
+         article{
+            background-color: #f1f1f1;
+            padding:10px;
+            -webkit-flex:3;
+            ms-flex:3;
+            flex:3;
+         }
+        webit-flex-direction:column;
+        flex-direction:column;
+         footer{
+            background-color: bisque;
+            padding: 10px;
+            text-align: center;
+            color: aquamarine;
+         }
+         @media (max-width:600px) {
+            section{
+                -webkit-flex-direction:column;
+                flex-direction: column;
+            }
+            
+         }
+    </style>
+ </head>
+ <body>
+        <div class="table-responsive-sm">
+          <header>
+            <h2>WELCOM</h2>
+            </header>
+         
+          <table class="table table-hover table-section">
+                <article>
+<tr class="table-primary">
+    <th> Roll No</th>
+     <th> Name</th>
+     <th> Grade</th>
+     <th> Status</th>
+</tr>
+    
+     <tr>
+     <td> 12035901 </td>
+     <td> Sumathi.A </td>
+     <td> A+ </td>
+     <td class="text-success"> Pass </td>
+     
+</tr>
+
+<tr>
+     <td> 12035902 </td>
+     <td> Surya.B</td>
+     <td> B+ </td>
+     <td class="text-success"> Pass </td>
+
+       
+</tr>
+   
+<tr>
+     <td> 12035903</td>
+     <td> Surash.M </td>
+     <td> A</td>
+     <td class="text-success"> Pass </td>
+
+</tr>
+<tr class="bg-danger text-white">
+     <td> 12035904</td>
+     <td> Rathika.M </td>
+     <td> F</td>
+     <td  class="text-danger"> Fail</td>
+</tr>
+
+</section>
+</article>
+</table>
+</div>
+<!--Error Alert-->
+<div class="alert alert-danger mt-4">
+<!--footer-->
+<footer class="bg-secondary text-white text-center p-3 mt-5 rounded">
+<p>&Copy;2025 Student Management System</p>
+
+</footer>
+
+</div>
+
+ </body> 
+ </html>
