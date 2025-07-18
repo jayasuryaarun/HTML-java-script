@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Form validation</title>
+</head>
+<body>
+    <form onsubmit="validate()">
+        <input type="text" id="phone number" name="fname" placeholder="phone number" required><br><br>
+        <input type="text" id="postal code"  name="postal code" placeholder="postal code" required><br><br>
+        <input type="submit" id="submit"  required><br><br>
+    </form>
+    <script>
+        function validate() {
+            var phonenumber=document.getElementById("phone number").value;
+            var regex =/^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
+            var phonevalid = regex.test(phonenumber);
+
+            var postalcode=document.getElementById("postal code").value;
+            var regex =/^[0-9]{6}$/;
+            var postalvalid = regex.test(postalcode);
+
+            if(phonevalid == false)
+{
+    alert('Please enter a valid phone number');
+    return false;
+  }  
+
+  if(postalvalid == false)
+  {
+    alert('Please enter a valid postal number');
+    return false;
+  }
+
+  return true;
+}
+
+
+        
+    </script>
+    
+</body>
+</html>
